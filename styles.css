@@ -1,9 +1,20 @@
 body{
-    background-color: #41B3A3;
+    background-color: #F2EECB;
     font-family: sans-serif;
-    text-align: center;
+    text-align:center;
 }
-
+hr{
+    width:80%;
+    border-top: 2px solid black;
+}
+ul{
+    text-align: left;
+    display:inline-block;
+}
+ol{
+    text-align: left;
+    display:inline-block;
+}
 nav.top-nav {
     top: 0px;
     left:0px;
@@ -14,6 +25,7 @@ nav.top-nav {
 nav.top-nav ul{
     list-style: none;
     padding-left: 0px;
+    text-align: center;
 }
 
 nav.top-nav li{
@@ -37,17 +49,29 @@ nav.top-nav li:active{
     color: #fff;
 }
 
-.projectCon{
-    width:500px;
-    height:500px;
-    background-color: white;
-    border-radius: 5px;
-    display:inline-block;
-    margin: 30px;
+.mainContent{
+    width:80%;
+    margin:auto;
+    padding:10px;
+    text-align: center;
+    margin-top: 0px;
 }
 
-.mainContent{
+.mainContent > h2{
+    margin-bottom: 0px;
+}
+.projectCon{
+    width:500px;
+    height:450px;
+    background-color: #85DCB0;
+    display:inline-block;
+    margin: 30px;
+    position: relative;
+    border-radius:10px;
+}
 
+.projectCon > img{
+    width:70%;
 }
 
 .footer{
@@ -61,11 +85,66 @@ nav.top-nav li:active{
     text-align: center;  
 }
 .footer > div{
-    font-size: 10px;
     margin: auto;
+}
+.footer > div > p{
+    font-size: x-small;
+    margin-bottom:0px;
 }
 .footer > div > a{
     display:inline;
     color:lightgray;
+    font-size: x-small;
+}
+
+.bioCon{
+    height:500px;
+    width:900px;
+    background-color: #85DCB0;
+    border-radius:10px;
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+    margin:auto;
+    flex-wrap: wrap;
+}
+.bioCon > img{
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+.bioCon > p{
+    font-size: large;
+    width:500px;
+}
+/* repurposed from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.hoverBox{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #85DCB0;  
+}
+
+.projectCon:hover .hoverBox{
+    opacity: .9;
+}
+
+.text {
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
