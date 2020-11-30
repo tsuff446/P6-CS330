@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css"/>
     </head>
 <body>
     <header>
-    <nav class="top-nav" aria-label="main navigation">
-        <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="bio.html"><li>About me</li></a>
-            <a href="assets/Oct2020Resume.pdf" target="_blank"><li>Resume</li></a>
-        </ul>
-    </nav>
-    </header>
-    <main>
+        <nav class="top-nav" aria-label="main navigation">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="bio.html"><li>About me</li></a>
+                <a href="assets/Oct2020Resume.pdf" target="_blank"><li>Resume</li></a>
+            </ul>
+        </nav>
         <h1 id="a-star-search">A-Star-Search Visualizer</h1>
         <hr>
-        <p>Implements the A* algorithm to find the shortest path between two points while only moving in cardinal directions (no diagonals). <br>
-           The A* algorithm is very similar to Dijstrka's Algorithm, but it uses a heuristic to make informed decisions on which nodes to traverse first. <br></p>
-        <h1 id="requirements-">Requirements:</h1>
-        <ol>
-            <li>Python 3</li>
-            <li>Tkinter and heapq packages installed</li>
-        </ol>
+    </header>
+    <main>
+        <div class="descriptionCon">
+            <div>
+                <img src="assets/example.png" width="30%" alt="Image of example maze">
+                <img src="assets/example2.png" width="30%" alt="Image of another example maze">
+                <img src="assets/start.png" width="30%" alt="Image of Program. Two buttons say start and clear.">
+            </div>
 
-        <h1 id="basic-instructions">Basic Instructions</h1>
-        <p>When you run main.py, you are greeted with this:</p>
-        <p><img src="assets/start.png" width="50%" alt="Image of Program. Two buttons say start and clear."></p>
-        <ul>
-            <li><p>Left click to set endpoints (maximum of two)</p></li>
-            <li><p>Right click to add walls</p></li>
-        </ul>
-        <p>Remove a selection by clicking it with the same click type you created it with.</p>
-        <p>After you&#39;re done creating your maze, click start to generate the shortest path.</p>
-        <p>Clear obviously clears all squares.</p>
-        <h1 id="examples">Examples</h1>
-        <p><img src="assets/example.png" width="50%" alt="Image of example maze"></p>
-        <p><img src="assets/example2.png" width="50%" alt="Image of another example maze"></p>
+            <p>Implements the A* algorithm to find the shortest path between two points while only moving in cardinal directions (no diagonals).
+            The A* algorithm is very similar to Dijstrka's Algorithm, but it uses a heuristic to make informed decisions on which nodes to traverse first.
+            This maze-solving visualizer allows users to draw custom mazes and see the optimal path (solved using A*) through the maze.<br></p>
+            <h2 id="requirements-">Requirements:</h2>
+            <ol>
+                <li>Python 3</li>
+                <li>Tkinter and heapq packages installed</li>
+            </ol>
+
+            <h2 id="basic-instructions">Basic Instructions</h2>
+            <p>When you run main.py, you are greeted with this:</p>
+            <ul>
+                <li><p>Left click to set endpoints (maximum of two)</p></li>
+                <li><p>Right click to add walls</p></li>
+            </ul>
+            <p>Remove a selection by clicking it with the same click type you created it with.</p>
+            <p>After you&#39;re done creating your maze, click start to generate the shortest path.</p>
+            <p>Clear obviously clears all squares.</p>
+        </div>
     </main>
     <footer class="footer">
         <div>
