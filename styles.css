@@ -126,6 +126,12 @@ main > h2{
     width:500px;
 }
 
+.bioCon > p > a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
 .descriptionCon{
     width: 900px;
     background-color: #85DCB0;
