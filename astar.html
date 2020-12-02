@@ -26,9 +26,12 @@
                 <img src="assets/start.png" width="30%" alt="Image of Program. Two buttons say start and clear.">
             </div>
 
-            <p>Implements the A* algorithm to find the shortest path between two points while only moving in cardinal directions (no diagonals).
-            The A* algorithm is very similar to Dijstrka's Algorithm, but it uses a heuristic to make informed decisions on which nodes to traverse first.
-            This maze-solving visualizer allows users to draw custom mazes and see the optimal path (solved using A*) through the maze.<br></p>
+            <p>The A*-Search GUI allows users to learn about maze solving through an easy-to-use interface. The A* algorithm is a type of search algorithm, which 
+                are useful in many applications such as path-finding. Many common search algorithms will traverse the maze in an unintelligent way, either following every path 
+                to its end, or by expanding slowly in all directions one node at a time. A*, however, uses a heuristic to make informed decisions on which nodes to traverse next.
+                While in some edge cases this heuristic might be tricked and cause poor decisions, with proper implementation, A* easily outperforms other search algorithms.
+                This maze-solving visualizer helps users to learn about the inner workings of A* by drawing custom mazes and watching A* find the optimal path through the maze using its
+                characteristic heuristic function (in this case manhattan distance to the goal)<br></p>
             <h2 id="requirements-">Requirements:</h2>
             <ol>
                 <li>Python 3</li>
