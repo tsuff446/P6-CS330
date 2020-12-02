@@ -1,3 +1,4 @@
+/* global attributes for all pages */
 body{
     background-color: #F2EECB;
     font-family: "Open Sans", sans-serif;
@@ -64,6 +65,8 @@ main{
 main > h2{
     margin-bottom: 0px;
 }
+
+/* Containers made for each page */
 .projectCon{
     width:500px;
     height:450px;
@@ -80,29 +83,6 @@ main > h2{
 
 .projectCon:focus-within{
     outline: 2px solid black;
-}
-
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height:50px;
-    background-color: #ad876d;
-    color: lightgray;
-    text-align: center;  
-}
-.footer > div{
-    margin: auto;
-}
-.footer > div > p{
-    font-size: x-small;
-    margin-bottom:0px;
-}
-.footer > div > a{
-    display:inline;
-    color:lightgray;
-    font-size: x-small;
 }
 
 .bioCon{
@@ -140,6 +120,30 @@ main > h2{
     padding: 10px;
     margin:auto;
     margin-bottom: 40px;
+}
+
+/* footer */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:50px;
+    background-color: #ad876d;
+    color: lightgray;
+    text-align: center;  
+}
+.footer > div{
+    margin: auto;
+}
+.footer > div > p{
+    font-size: x-small;
+    margin-bottom:0px;
+}
+.footer > div > a{
+    display:inline;
+    color:lightgray;
+    font-size: x-small;
 }
 
 /* repurposed below hover text css from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
