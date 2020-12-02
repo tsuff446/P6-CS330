@@ -20,6 +20,7 @@ ol{
     text-align: left;
     display:inline-block;
 }
+/* Nav Bar */
 nav.top-nav {
     top: 0px;
     left:0px;
@@ -67,6 +68,8 @@ main > h2{
 }
 
 /* Containers made for each page */
+
+/* Landing Page */
 .projectCon{
     width:500px;
     height:450px;
@@ -85,6 +88,7 @@ main > h2{
     outline: 2px solid black;
 }
 
+/* Bio Page */
 .bioCon{
     height:500px;
     width:900px;
@@ -112,6 +116,7 @@ main > h2{
     font-style: italic;
 }
 
+/* A-Star Page */
 .descriptionCon{
     width: 900px;
     background-color: #85DCB0;
